@@ -1,7 +1,5 @@
 # Plastid_Genome
 
-# cmb-plastid-genome-Rosa-Vertudazo
-
 Characterization and analysis of the complete chloroplast genome of *Rosa chinensis* using NCBI, Galaxy, and GitHub documentation.
 
 ---
@@ -29,7 +27,6 @@ Characterization and analysis of the complete chloroplast genome of *Rosa chinen
 - **Topology:** Circular DNA
 - **NCBI Source:** https://www.ncbi.nlm.nih.gov/nuccore/NC_065867.1
 
-This repository documents the retrieval, analysis, and characterization of the complete chloroplast genome of *Rosa chinensis*. The project uses NCBI to obtain the sequence and its annotations, Galaxy to calculate sequence statistics, and GitHub to document the workflow, results, and interpretation.
 
 ## Analysis Summary
 
@@ -41,25 +38,19 @@ This repository documents the retrieval, analysis, and characterization of the c
 - **FASTA File:** `Rosa_chinensis_NC_065867.1.fasta`
 - **Annotated Genome File:** `Rosa_chinensis_NC_065867.1.gb`
 
-The complete chloroplast genome of *Rosa chinensis* was retrieved from NCBI in FASTA and annotated GenBank formats. The FASTA sequence was uploaded to Galaxy for basic sequence characterization. The GenBank annotation was used to investigate the organization of the chloroplast genome, protein-coding genes, RNA genes, introns, pseudogenes, and duplicated genes.
-
 **Galaxy results to insert:**
 
 - Genome length: 156,591 bp
 - Number of sequence records: 1
 - GC content: 37.24%
-- LSC length: 
-- SSC length: 
-- IR length:
-- Total annotated genes: [Enter verified count]
-- Protein-coding genes: [Enter verified count]
-- tRNA genes: [Enter verified count]
-- rRNA genes: [Enter verified count]
-- Pseudogenes: [Enter verified count or annotation finding]
-
-The sequence length should be checked against the NCBI record. The GC content and gene counts should be taken from the actual Galaxy output, annotation, and relevant reference rather than copied from another *Rosa* species or cultivar.
-
-The complete plastid genome characterization report, including the answers to Questions 1–10 and the plastid-versus-mitochondrial comparison, is presented below.
+- LSC length: 85,737 bp
+- SSC length: 18,766 bp
+- IR length:26,044 bp
+- Total annotated genes: 
+- Protein-coding genes: 79 unique
+- tRNA genes: 30 unique
+- rRNA genes: 4 unique
+- Pseudogenes: 0 
 
 ---
 
@@ -79,17 +70,14 @@ The NCBI record identifies the sequence as a complete chloroplast genome of *Ros
 
 Many flowering-plant chloroplast genomes have a quadripartite organization consisting of one large single-copy region (LSC), one small single-copy region (SSC), and two inverted-repeat regions (IRa and IRb). The two inverted repeats contain duplicated copies of some genes and separate the LSC and SSC regions. This organization is a common feature of angiosperm chloroplast genomes.
 
-The exact region boundaries and sizes for the selected `NC_065867.1` record must be obtained from its GenBank annotations or an appropriate genome publication.
-
 | Region | Length |
 |---|---:|
-| LSC | [Enter verified length] bp |
-| SSC | [Enter verified length] bp |
-| IRa | [Enter verified length] bp |
-| IRb | [Enter verified length] bp |
+| LSC | 85,737 bp |
+| SSC | 18,766 bp |
+| IRa | 26,044bp |
+| IRb |  26,044bp |
 | Total | 156,591 bp |
 
-The region sizes should sum to the total genome length, allowing for any boundary or annotation differences. Do not insert values from a different *Rosa chinensis* record without confirming that they apply to this accession.
 
 ## Question 4. Summarize the annotated gene content: total genes, protein-coding genes, tRNA genes, rRNA genes, and pseudogenes. Explain why genes located in the inverted-repeat regions may appear in two copies.
 
@@ -97,11 +85,11 @@ The chloroplast genome contains genes involved in photosynthesis, gene expressio
 
 | Gene category | Count in `NC_065867.1` |
 |---|---:|
-| Total annotated genes | [Verify] |
-| Protein-coding genes/CDS | [Verify] |
-| tRNA genes | [Verify] |
-| rRNA genes | [Verify] |
-| Pseudogenes | [Verify] |
+| Total annotated genes | 113 unique |
+| Protein-coding genes/CDS | 79 unique |
+| tRNA genes | 30 unique|
+| rRNA genes | 4 unique |
+| Pseudogenes | 0 |
 
 Genes in the inverted-repeat regions may occur in two copies because the IRa and IRb regions contain corresponding duplicated DNA sequences. These copies can include protein-coding genes, tRNA genes, and rRNA genes. Therefore, the total number of annotated gene copies may differ from the number of unique gene types. The method used to count genes should be stated clearly.
 
@@ -122,53 +110,37 @@ The following table provides examples of chloroplast protein-coding genes and th
 | *ndhB* | NADH dehydrogenase-like complex | Encodes a component of the chloroplast NDH complex, which participates in photosynthetic electron transport. |
 | *matK* | RNA processing | Encodes a maturase associated with the splicing of certain group II introns. |
 
-These genes represent several functional groups, including photosynthesis, carbon fixation, transcription, translation, and RNA processing. The final report should list at least eight genes that are actually present in the selected record and describe their functions using reliable annotation or reference sources.
 
 ## Question 6. Identify important RNA and RNA-processing features. Include the rRNA genes, examples of tRNA genes, and at least two genes with introns if present in your genome.
 
 Chloroplast genomes contain RNA genes that support protein synthesis. Ribosomal RNA genes form part of the plastid ribosome, while transfer RNA genes carry amino acids to the ribosome during translation. Common chloroplast RNA gene annotations include the *rrn* and *trn* families.
 
-Examples to search for in the selected annotation include:
-
-- **rRNA genes:** *rrn16*, *rrn23*, *rrn4.5*, and *rrn5*.
-- **tRNA genes:** examples from the *trnA*, *trnI*, *trnK*, and *trnL* families.
-- **RNA processing:** *matK* and other annotated genes involved in RNA processing or splicing.
-
-Introns are non-coding segments within a gene's transcript that are removed during RNA processing. Some chloroplast genes contain one intron, while others may contain two. Examples often found in angiosperm chloroplast genomes include *rpl16*, *ndhA*, *petB*, *rps16*, *ycf3*, and *clpP*. Their presence and intron counts must be verified in `NC_065867.1`.
 
 | Feature | Observation in the selected genome |
 |---|---|
-| rRNA genes | [Record annotated names and count] |
-| tRNA genes | [Record examples and count] |
-| First gene with an intron | [Verify gene and annotation] |
-| Second gene with an intron | [Verify gene and annotation] |
-| Other RNA-processing features | [Record if annotated] |
+| rRNA genes | rrn16S—-102177..103667 and complement 138662..14001152 |
+| tRNA genes |trnH-GUG— 4..77 |
+| First gene with an intron | trnK-UUU—1762..4222 |
+| Second gene with an intron |rps16— 5293..6166  |
+| Other RNA-processing features | matK— 1984..3495|
+
+intron coordinates from the join statements [ end of exon 1 + 1 to start of exon 2 - 1 ] 
 
 ## Question 7. Describe any pseudogenes, gene losses, duplications, rearrangements, or other unusual features reported for your plastid genome. If none are reported, state this clearly.
 
-The genome should be examined for pseudogene annotations, duplicated genes, missing genes, rearrangements, and other unusual structural features. Duplicated genes may occur in the inverted-repeat regions, where corresponding DNA segments are present twice.
-
-For the selected *Rosa chinensis* genome, these findings should be reported only after checking the GenBank feature annotations and relevant publication. If no pseudogenes are explicitly annotated, the appropriate statement is:
-
-“No pseudogenes were explicitly identified in the RefSeq annotation inspected for this analysis. This describes the annotation available in the selected record and does not independently establish that every gene-like sequence is functional.”
-
-Likewise, if no rearrangement or gene loss is reported in the sources examined, state that no such feature was identified in those sources. Do not interpret a lack of annotation as proof that the feature is biologically impossible.
+No gene loss, pseudogene, rearrangement or other usual structural feature was identified in the GenBank annotation of NC_065867.1. The genes set appeared complete when compared with a typical angiosperm chloroplast gene set. 
 
 ## Question 8. What is the GC content of your plastid genome? Based on your Galaxy results and annotation, describe two other notable sequence or structural observations.
-
-The GC content is the percentage of all nucleotides in the genome that are guanine (G) or cytosine (C). It is an important basic characteristic used to describe and compare DNA sequences.
-
-The GC content for this activity should be taken from the Galaxy sequence-statistics output. The genome length should also be checked against the NCBI reference.
+The GC content of the Rosa chinensis chloroplast genome is approximately 37.24%. 
 
 | Measurement | Result |
 |---|---|
 | Genome length | 156,591 bp (NCBI record; verify Galaxy output) |
-| GC content | [Enter Galaxy result]% |
-| Number of sequence records | [Enter Galaxy result] |
-| Observation 1 | [Describe verified genome organization or region sizes] |
-| Observation 2 | [Describe verified gene duplication, introns, or another annotated feature] |
+| GC content | Approximately 37.24% in published Rosa chinensis chloroplast genome data |
+| Number of sequence records | 1 sequence   |
+| Observation 1 | The chloroplast genome has four-region structure, one large single-copy region, one small single-copy region, and two inverted repeat regions.  |
+| Observation 2 | The annotation includes gene with introns, such as trnK-UUU and rps16. Genes may also be duplicated in the inverted repeat regions, a common feature of chloroplast genomes. |
 
-Two possible types of observations are the presence of the LSC-IR-SSC-IR structure and duplicated genes in the inverted repeats. Use these only after verifying them in the selected record.
 
 ## Question 9. Compare plastid and mitochondrial genomes. Give at least five similarities and five differences, considering location, biological role, inheritance, genome organization, gene content, copy number, and evolutionary behavior.
 
@@ -193,7 +165,6 @@ Plastid and mitochondrial genomes are both organellar genomes in plant cells. Th
 6. **Inheritance:** Chloroplast inheritance is often maternal in angiosperms, but exceptions occur. Plant mitochondrial inheritance is also frequently maternal, although inheritance varies across taxa.
 7. **Copy number:** Both organelles can contain multiple genome copies per cell, but their copy numbers vary with tissue, cell type, developmental stage, and physiological condition.
 
-These comparisons describe common patterns rather than universal rules. Inheritance, genome organization, and copy number can differ among plant lineages.
 
 ## Question 10. Explain the practical value of plastid genomes in research. List advantages compared with the nuclear genome, including nuclear sex chromosomes where applicable, and explain important limitations. Give one research question for which plastid data would be useful and one for which nuclear genomic data would be more appropriate.
 
@@ -226,13 +197,10 @@ Plastid genomes are useful because they provide a relatively compact source of g
 
 “How are closely related *Rosa* species related evolutionarily, based on their complete chloroplast genome sequences?”
 
-Comparing plastid sequences can help address this question because conserved genes and variable regions provide molecular characters for phylogenetic analysis.
 
 ### Research question suited to nuclear genomic data
 
 “Which nuclear genetic variants contribute to differences in flower color and other inherited ornamental traits among rose cultivars?”
-
-Nuclear genomic data would be more appropriate for this question because many inherited traits are influenced by genes distributed across the nuclear chromosomes, including interactions among multiple loci.
 
 ---
 
@@ -273,16 +241,6 @@ Nuclear genomic data would be more appropriate for this question because many in
 7. Examined the annotated GenBank record to investigate genome regions and gene features.
 8. Documented the results and analysis steps in GitHub.
 
-## Required screenshots
-
-- `01_galaxy_history_upload.png` — named history and uploaded FASTA dataset.
-- `02_galaxy_sequence_statistics.png` — completed statistics output.
-- `03_ncbi_genbank_features.png` — annotated GenBank feature section.
-- `04_chloroplast_genome_regions.png` — evidence for the LSC, SSC, and IR regions, if displayed.
-- `05_annotated_gene_examples.png` — examples of annotated protein-coding and RNA genes.
-
-Only include screenshots that you actually captured during your analysis.
-
 ---
 
 # Conclusion
@@ -300,6 +258,3 @@ Zhang, & Zhu. (2019). Characterization of the complete chloroplast genome of Chi
 Galaxy Project. (n.d.). *Galaxy platform*. https://usegalaxy.org/
 
 GitHub. (n.d.). *GitHub documentation*. https://docs.github.com/
-
-**Reference note:** Confirm the full authors, publication year, journal details, and DOI for the rose-genome paper before final submission. The published paper cited above reports a different genome length from `NC_065867.1`; use it for general context unless you verify that its sequence corresponds to the exact accession you analyzed.
-
